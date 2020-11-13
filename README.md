@@ -14,6 +14,8 @@ Use the following variables to search
 * lat = "48.208176"
 * lon = "16.373819"
 
+5. Minimum installations:  `pip install Flask Flask-SQLAlchemy requests`
+
 Tasks:
  * A. Create an endpoint (main route) that shows the information provided (if in dictionary, this means the keys)
   Note: Answer should be something like this 
