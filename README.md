@@ -32,4 +32,10 @@ Tasks:
      * d. pressure
  * D. Create a query from database at this endpoint ('/query') that returns the data from the database.
 
-Thanks to the following participants and contributors: Elizabeth, Victoria, Justin, Rassamy, Micah, Drew, Henry, Ik, Jacob, Antony, Nathan, Marcos
+
+
+
+
+
+
+`Thanks to the following participants and contributors: Elizabeth, Victoria, Justin, Rassamy, Micah, Drew, Henry, Ik, Jacob, Antony, Nathan, Marcos`
