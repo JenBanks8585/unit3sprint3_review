@@ -9,6 +9,11 @@ We will retrieve weather information from https://openweathermap.org/.
     ONE CALL API
 4. Choose an API call that will only require for `lat`, `lon` and `api key`
 
+Location to search:
+Use the following variables to search
+* lat = "48.208176"
+* lon = "16.373819"
+
 Tasks:
  * A. Create an endpoint (main route) that shows the information provided (if in dictionary, this means the keys)
   Note: Answer should be something like this 
@@ -20,4 +25,4 @@ Tasks:
      * b. clouds 
      * c. humidity
      * d. pressure
- * D. Create a query from database at this endpoint ('/query')
+ * D. Create a query from database at this endpoint ('/query') that returns the data from the database.
