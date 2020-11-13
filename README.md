@@ -8,15 +8,16 @@ We will retrieve weather information from https://openweathermap.org/.
 3. There a number of available APIs there, but we will just concentrate
     ONE CALL API
 4. Choose an API call that will only require for `lat`, `lon` and `api key`
+
 Tasks:
- A. Create an endpoint (main route) that shows the information provided (if in dictionary, this means the keys)
+ * A. Create an endpoint (main route) that shows the information provided (if in dictionary, this means the keys)
   Note: Answer should be something like this 
   ['dt', 'sunrise', 'sunset', 'temp', 'feels_like', 'pressure', 
   'humidity', 'dew_point', 'wind_speed', 'wind_deg', 'weather', 'clouds', 'pop', 'uvi']
- B. Create another endpoint ('/results') that shows the first 3 results of "DAILY"
- C. Create a database that stores the following information
-     a. id
-     b. clouds 
-     c. humidity
-     d. pressure
- D. Create a query from database at this endpoint ('/query')
+ * B. Create another endpoint ('/results') that shows the first 3 results of "DAILY"
+ * C. Create a database that stores the following information
+     * a. id
+     * b. clouds 
+     * c. humidity
+     * d. pressure
+ * D. Create a query from database at this endpoint ('/query')
