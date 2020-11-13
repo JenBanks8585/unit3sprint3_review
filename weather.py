@@ -1,22 +1,37 @@
 import requests
 from flask import Flask 
 from flask_sqlalchemy import SQLAlchemy 
+
 app = Flask(__name__)
+
+# Configurations
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///db.sqlite3"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
+
+# Database instance
 DB = SQLAlchemy(app)
+
+# Search variables
 lat = "48.208176"
 lon = "16.373819"
 API_key = "69dee9b401f7bf1265fdc42ab14c4460"
+
+# request acces to API
 URL = f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&appid={API_key}"
 request = requests.get(URL)
 data = request.json()
+
+# endpoint that returns the keys
 @app.route('/')
 def root():
     return str(data.keys())
+
+# endpoint that returns the first 3 information under "DAILY" key
 @app.route('/results')
 def results():
     return str(data["daily"][:3])
+
+# adding information from API into the database
 @app.route('/weather')
 def weather():
     DB.drop_all()
@@ -36,6 +51,8 @@ def weather():
     DB.session.commit()
     all_weather = Weather.query.all()
     return str(all_weather)
+
+
 # Create database
 class Weather(DB.Model):
     id = DB.Column(DB.BigInteger, primary_key=True)
