@@ -21,9 +21,9 @@ Use the following variables to search
 
 Tasks:
  * A. Create an endpoint (main route) that shows the information provided (if in dictionary, this means the keys)
-  Note: Answer should be something like this 
-  ['dt', 'sunrise', 'sunset', 'temp', 'feels_like', 'pressure', 
-  'humidity', 'dew_point', 'wind_speed', 'wind_deg', 'weather', 'clouds', 'pop', 'uvi']
+  Note: Answer should be something like this: 
+  `['dt', 'sunrise', 'sunset', 'temp', 'feels_like', 'pressure', 
+  'humidity', 'dew_point', 'wind_speed', 'wind_deg', 'weather', 'clouds', 'pop', 'uvi']`
  * B. Create another endpoint ('/results') that shows the first 3 results of "DAILY"
  * C. Create a database that stores the following information
      * a. id
