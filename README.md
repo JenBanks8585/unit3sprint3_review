@@ -7,14 +7,17 @@ We will retrieve weather information from https://openweathermap.org/.
      in order to copy your API key (edited)
 3. There a number of available APIs there, but we will just concentrate
     ONE CALL API
-4. Choose an API call that will only require for `lat`, `lon` and `api key`
+4. Minimum installations:  `pip install Flask Flask-SQLAlchemy requests`
+5. You should create your own `.py` file to house your solution. 
+6. A sample implementation is in `weather.py`. It is preferable that you do not access it until you create your own solution.
+7. Choose an API call that will only require for `lat`, `lon` and `api key`
 
 Location to search:
 Use the following variables to search
 * lat = "48.208176"
 * lon = "16.373819"
 
-5. Minimum installations:  `pip install Flask Flask-SQLAlchemy requests`
+
 
 Tasks:
  * A. Create an endpoint (main route) that shows the information provided (if in dictionary, this means the keys)
